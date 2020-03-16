@@ -6,6 +6,6 @@ For developers:
 - In frontend: AngularJS, HTML.
 - In backend: IDE SpringBoot, Java 8, Maven, Hibernate, Annotations, JUnit, OAuth, Java Logging API.
 
-The conceptual overview of this application can been seen in the following image:
+The conceptual overview of this application can been seen in the following image (in PT-BR):
 
 https://github.com/marcioalexandre/bank/blob/master/projeto%20conceitual/banco-capgemini.jpg
