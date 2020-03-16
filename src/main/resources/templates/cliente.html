@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html ng-app='app-cliente'>
+ <head> 
+  <meta charset='UTF-8' />
+  <title>Cadastro de Novo Cliente</title>
+  <script src='https://code.angularjs.org/1.5.9/angular.min.js'></script> 
+  <script src='./js/cliente.js'></script>
+ </head> 
+ <body ng-controller='cliente-controller'>
+
+	<h1>Cadastro Novo Cliente</h1>
+	
+	<p>CPF: <input type='text' ng-model='cliente.cpf' value='' /> </p>
+	<p>Nome: <input type='text' ng-model='cliente.nome' value='' /> </p>
+	<p>Número Celular: <input type='text' ng-model='cliente.numerocelular' value='' /> </p>
+	<p>E-mail: <input type='text' ng-model='cliente.login.email' value='' /> </p>
+	<p>Senha: <input type='password' ng-model='cliente.login.senha' value='' /> </p>
+	<p><input type='submit' ng-click='salvar(cliente)' value='ok' /> {{msg}}</p> 
+	<br/>
+	<br/>
+	[<a href="/">Index</a>]
+  </body>
+
+</html>

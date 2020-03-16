@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html ng-app='app-transacao'>
+ <head> 
+  <meta charset='UTF-8' />
+  <title>Transações por Cliente</title>
+  <script src='https://code.angularjs.org/1.5.9/angular.min.js'></script> 
+  <script src='./js/transacao.js'></script>
+ </head> 
+ <body ng-controller='transacao-controller'>
+
+	<h1>Transações por Cliente</h1>
+	
+	<p>Cliente: <select ng-model="cliente" ng-change="buscar(cliente)" ng-options="item.nome for item in listaclientes"></select></p>
+	<!-- 
+	<p>Data Inicial (dd-mm-aaaa): <input type='text' ng-model='transacao.datainicial' value='' /> 15/03/2020 </p>
+	<p>Hora Inicial (hh:mm): <input type='text' ng-model='transacao.horainicial'  value='' /> 00:00 </p>
+	<p>Data Final (dd/mm/aaaa): <input type='text' ng-model='transacao.datafinal' value='' /> 16/03/2020 </p>
+	<p>Hora Final (hh:mm): <input type='text' ng-model='transacao.horafinal' value='' /> 00:30 </p>
+	 -->
+	<p>Depósitos: </p>
+	<p ng-repeat='deposito in depositos'> <font color="blue"> {{deposito.datetime}} - {{deposito.observacao}} - {{deposito.valor}} (r$) </font></p>
+	
+	<p>Saques: </p>
+	<p ng-repeat='saque in saques'><font color="red">{{saque.datetime}} - {{saque.observacao}} - {{saque.valor}} (r$) </font></p>
+	
+	<br/>
+	<br/>
+	[<a href="/">Index</a>]
+	
+  </body>
+
+</html>	

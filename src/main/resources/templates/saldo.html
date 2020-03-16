@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html ng-app='app-saldo'>
+ <head> 
+  <meta charset='UTF-8' />
+  <title>Saldo</title>
+  <script src='https://code.angularjs.org/1.5.9/angular.min.js'></script> 
+  <script src='./js/saldo.js'></script>
+ </head> 
+ <body ng-controller='saldo-controller'>
+
+	<h1>Saldo</h1>
+	
+	<p>Cliente: <select ng-model="cliente" ng-change="getSaldo(cliente)" ng-options="item.nome for item in listaclientes"></select></p>
+	<p>Depositos (r$): {{ depositos }} </p>
+	<p>Saques (r$): {{ saques }} </p>
+	<p>Saldo (r$): {{ saldoresultado }} </p>
+	<br/>
+	<br/>
+	[<a href="/">Index</a>]
+	
+  </body>
+
+</html>	

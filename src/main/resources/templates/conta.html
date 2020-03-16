@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app='app-conta'>
+ <head> 
+  <meta charset='UTF-8' />
+  <title>Cadastro de Cliente em Conta</title>
+  <script src='https://code.angularjs.org/1.5.9/angular.min.js'></script> 
+  <script src='./js/conta.js'></script>
+ </head> 
+ <body ng-controller='conta-controller'>
+
+	<h1>Cadastro de Cliente em Conta</h1>
+	
+	<p>Agência: <select ng-model="conta.agencia" ng-change="numerosdeconta(conta.agencia)" ng-options="item.id for item in agencias"></select> </p>
+	<p>Tipo de Conta:
+		<select ng-model="conta.tipo">
+			<option>Corrente</option>
+			<option>Poupança</option>
+		</select> 
+	</p>
+	<p>Número da Conta: <select ng-model="conta.numeroconta"   ng-options="item.id for item in numeros"></select> </p>
+	<p>Observação: <input type='text' ng-model='conta.observacao' ng-required="requerido" /> </p>
+	<p>Cliente:	<select ng-model="cliente" ng-options="item.nome for item in listaclientes"></select></p>
+	<p><input type='submit' ng-click='salvar(conta, cliente)' value='ok' /> {{msg}}</p> 
+	<br/>
+	<br/>
+	[<a href="/">Index</a>]
+	
+  </body>
+
+</html>

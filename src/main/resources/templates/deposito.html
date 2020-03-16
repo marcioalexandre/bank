@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html ng-app='app-deposito'>
+ <head> 
+  <meta charset='UTF-8' />
+  <title>Depósito em Conta</title>
+  <script src='https://code.angularjs.org/1.5.9/angular.min.js'></script> 
+  <script src='./js/deposito.js'></script>
+ </head> 
+ <body ng-controller='deposito-controller'>
+
+	<h1>Novo Depósito em Conta</h1>
+	
+	<p>Cliente: <select ng-model="cliente" ng-change="getConta(cliente)" ng-options="item.nome for item in listaclientes"></select></p>
+	<p>Agência: <input type='text' ng-model='deposito.agencia' disabled /> </p>
+	<p>Número Conta: <input type='text' ng-model='deposito.numeroconta' disabled /> </p>
+	<p>Valor: <input type='text' ng-model='deposito.valor' value='' /> </p>
+	<p>Observação: <input type='text' ng-model='deposito.observacao' value='' /> </p>
+	<p><input type='submit' ng-click='salvar(deposito, cliente)' value='ok' /> {{msg}}</p> 
+	<br/>
+	<br/>
+	[<a href="/">Index</a>]
+	
+  </body>
+
+</html>
