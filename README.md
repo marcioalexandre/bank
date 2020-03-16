@@ -3,8 +3,10 @@
 - This is a web application that operates basic tasks commonly seen at Financial Banks such as Registration of Customer, Account, Cash Deposit, Cash Withdrawal, and List of all transactions.
 
 For developers:
-- In frontend: AngularJS, HTML.
-- In backend: IDE SpringBoot, Java 8, Maven, Hibernate, Annotations, JUnit, OAuth, Java Logging API.
+- Client-Server and REST Architecture;
+- In frontend: AngularJS, HTML;
+- In backend: IDE SpringBoot, Java 8, Maven, Hibernate, Annotations, JUnit, OAuth, Java Logging API;
+- Database PostgreSQL.
 
 The conceptual overview of this application can been seen in the following image (in PT-BR):
 
