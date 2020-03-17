@@ -1,6 +1,6 @@
 # Web Application for Financial Banks
 
-- This is a web application that operates basic tasks (such as Registration of Customer, Account, Cash Deposit, Cash Withdrawal, and List of all transactions), which are commonly seen at Financial Banks.
+- This is a web application that operates basic tasks (such as Registration of Customer, Account, Cash Deposit, Cash Withdrawal, and List of all transactions), which are commonly seen at financial banks.
 
 For developers:
 - Client-Server and REST architectures;
